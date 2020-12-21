@@ -1,0 +1,22 @@
+{
+  "namespace": "",
+  "packageDirectories": [
+    { 
+      "path": "force-app", 
+      "default": true
+    }
+  ],
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "plugins": {
+    "appiriodx": {
+      "packages": [],
+      "permissionSets": [],
+      "sampleData": {
+        "planFiles": ["data/data-import-plan.json"],
+        "sObjectFiles": []
+      }
+    }
+  },
+  "sourceApiVersion": "49.0",
+  "packageAliases": {}
+}

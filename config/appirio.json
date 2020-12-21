@@ -1,0 +1,9 @@
+{
+  "cmc": {
+    "enabled": false,
+    "products": ["None"]
+  },
+  "projectType": "sfdx-package",
+  "sourceBranchToClone": "master",
+  "sourceControlType": "git"
+}

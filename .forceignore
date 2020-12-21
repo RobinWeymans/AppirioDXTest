@@ -1,0 +1,41 @@
+# List files or directories below to ignore them when running force:source:push, force:source:pull, and force:source:status
+# More information: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_exclude_source.htm
+#
+
+package.xml
+
+# LWC configuration files
+**/jsconfig.json
+**/.eslintrc.json
+
+# LWC Jest
+**/__tests__/**
+
+Admin.profile
+OrgPreference
+
+######################################
+# Section to define metadata exclusions for adx metadata:list command and Org Capture functionality in Appirio DX desktop app.
+# Please add/remove items to include/exclude appropriate metadata in your export.
+#
+# Format:
+#  MetadataType/ComponentName
+# Examples:
+#  ApexPage/yahoo_map
+#  CustomField/Account.SLA__c
+#  **/WorkBadge*
+#  CustomObjectTranslation/*
+#  Workflow*/*
+######################################
+
+# Metadata types excluded by default.
+Report/*
+Dashboard/*
+EmailTemplate/*
+Document/*
+
+# Metadata types excluded to reduce the export size
+# CustomObjectTranslation/*
+
+# Add metadata types which are not supported for source tracking
+# ManagedContentType/*
